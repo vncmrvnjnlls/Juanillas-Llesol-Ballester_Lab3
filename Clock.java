@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 // walang halong AI to heheheheh
 
+// add a public class for the formula of the clock convertion
 public class Clock {
 
     // Seconds to Minutes
