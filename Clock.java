@@ -1,43 +1,46 @@
 import java.util.Scanner;
 
+// walang halong AI to heheheheh
+
 public class Clock {
 
-    // Converts Seconds to Minutes
+    // Seconds to Minutes
     public double secondsToMinutes(int seconds) {
         return seconds / 60.0;
     }
 
-    // Converts Seconds to Hours
+    // Seconds to Hours
     public double secondsToHours(int seconds) {
         return seconds / 3600.0;
     }
 
-    // Converts Minutes to Seconds
+    // Minutes to Seconds
     public int minutesToSeconds(int minutes) {
         return minutes * 60;
     }
 
-    // Converts Minutes to Hours
+    // Minutes to Hours
     public double minutesToHours(int minutes) {
         return minutes / 60.0;
     }
 
-    // Converts Hours to Seconds
+    // Hours to Seconds
     public int hoursToSeconds(int hours) {
         return hours * 3600;
     }
 
-    // Converts Hours to Minutes
+    // Hours to Minutes
     public int hoursToMinutes(int hours) {
         return hours * 60;
     }
 
-    // Main method to drive the menu and conversions
+    // this is the main method to run the menu and conversions.
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Clock clock = new Clock();
         boolean continueConversion = true;
 
+        // looping the convertion if do you want convert again
         while (continueConversion) {
             // Display menu options
             System.out.println("[1] Seconds to Minutes");
@@ -76,7 +79,7 @@ public class Clock {
                     System.out.println("Invalid choice.");
             }
 
-            // Ask if the user wants to continue
+            // And in this section, you will ask if the user wants to continue
             System.out.print("Do you want to convert time? (Y/N): ");
             char response = scanner.next().charAt(0);
             if (response == 'N' || response == 'n') {
@@ -84,7 +87,7 @@ public class Clock {
             }
             System.out.println("---------------------------------------------");
         }
-
+        // if you choose no, the program will close or end the terminal.
         scanner.close();
         System.out.println("Thank you for using the Clock Conversion Program!");
     }
